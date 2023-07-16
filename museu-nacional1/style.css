@@ -1,0 +1,74 @@
+body {background:#f4f2ec url(images/fundo.png) repeat-x; font: 12px "Lucida Grande","Lucida Sans Unicode", Arial, sans-serif;}
+
+#container {width: 1080px; margin: 0 auto;}
+
+/* ------------------------------------- HEADER e NAV  ---------------------------------------------*/
+
+header {padding: 15px 0; height: 55px;}
+
+#logo a {text-indent: -99999px; width: 248px; height: 21px; background: url(images/logo.png) no-repeat; float: left; display: block;}
+
+nav ul {float: right; list-style-type: none;  margin-top: 6px;}
+
+nav li {float: left; display: block; text-transform: uppercase;}
+
+nav li a {margin-right: 25px;}
+
+a {text-decoration: none;}
+
+a:link, a:visited {color: #af670a;}
+
+a:hover {color: #227115;}
+
+nav li a:hover {border-bottom: 1px solid #227115;}
+
+/* ------------------------------------- FIM HEADER e NAV  ---------------------------------------------*/
+
+/* ------------------------------------- CONTEUDO PRINCIPAL  -------------------------------------------------*/
+#conteudo {float: left; width: 710px; margin-bottom: 20px;}
+
+h3 {color: #227115; text-transform: uppercase; font-size: 1em;}
+
+article#video {width: 310px; float: left; margin-left: 27px;}
+
+article#mapa {width: 310px; float: left; margin-left: 37px;}
+
+article#expo {width: 310px; float: left; margin-left: 27px; margin-top: 13px;}
+
+article#texto {width: 310px; float: left; margin-left: 37px; margin-top: 13px;}
+
+#expo li{line-height: 28px;}
+
+/* ------------------------------------- FIM CONTEUDO PRINCIPAL  ----------------------------------------------*/
+ /* aside >>>>>>>>> */ aside {background-color: #ebe7dd; float: right; width: 350px; margin-bottom: 20px;}
+/* -------------------------------------       #VISITA       --------------------------------------------*/
+#visita {background-color: #cdc8b1; padding: 10px 27px 27px 27px; margin-top: 10px;}
+
+legend {display: none;}
+
+fieldset {border: none;}
+
+h4 {color: #86521a; text-transform: uppercase; margin-bottom: 0;}
+
+input {width: 80px;}
+
+input.campo {width: 30px;}
+
+input[type=submit] {width: 100%; background-color: #9b9271; color: white; border: none; padding: 15px; font-size: 15px; font-weight: bold; cursor: pointer;}
+
+/* ------------------------------------- FIM #VISITA  -------------------------------------------------*/
+
+/* ------------------------------------- #GALERIA  ----------------------------------------------------*/
+
+#galeria {padding: 0 27px;}
+
+#galeria a {background: url(images/fundo-foto.png) no-repeat; padding: 17px 15px; display: block; float: left; margin: 10px 0 0 20px;}
+
+#galeria img {margin-left: 2px; margin-top: 3px;}
+
+
+/* ------------------------------------- FOOTER  ----------------------------------------------------*/
+
+footer {text-align: center; padding: 20px 0 30px 0; background: url(images/fundo-rodape.png) no-repeat top center;}
+
+footer a {padding: 2px 10px;}
