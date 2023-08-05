@@ -1,0 +1,25 @@
+#home {
+   background-color: #ffc107;
+   color: white;
+}
+
+.caixa {
+   padding: 60px 0px;
+   border-bottom: 1px solid #e5e5e5;
+}
+
+footer p a {
+   margin: 5px 15px;
+}
+
+@media (max-width:576px) {
+   #home h1{
+      font-size: 200% !important;
+      
+   }
+   #home p {
+      font-size: 100% !important;
+   }
+
+   
+}
