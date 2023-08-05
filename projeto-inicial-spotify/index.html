@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d28f0790a9.js" crossorigin="anonymous"></script>
+
+    <!-- HTML5Shiv -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+    <title>Música para todos - Spotify</title>
+
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+
+  </head>
+  <body>
+
+    <!-- --------------------------   HEADER ----------------------------------- -->
+   <header>
+    
+      <nav class="navbar navbar-expand-md navbar-light navbar-transparent fixed-top">
+        <div class="container">
+          <a href="#" class="navbar-brand"><img src="imagens/spotify.svg" width="142" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+          <i class="fa-solid fa-bars text-white"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbar1">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ml-3">
+                <a href="#" class="nav-link">Premium</a>
+              </li>
+
+              <li class="nav-item ml-3">
+                <a href="#" class="nav-link">Ajuda</a>
+              </li>
+
+              <li class="nav-item ml-3">
+                <a href="#" class="nav-link">Baixar</a>
+              </li>
+
+              <li class="nav-item divisor"></li>
+
+              <li class="nav-item ml-3">
+                <a href="#" class="nav-link">Inscrever-se</a>
+              </li>
+
+              <li class="nav-item ml-3">
+                <a href="#" class="nav-link">Entrar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+      </nav>
+   </header>
+
+   <!-- -------------------------- END HEADER ----------------------------------- -->
+
+   <!-- -------------------------- HOME SECTION ----------------------------------- -->
+
+   <section class="d-flex" id="home">
+    <div class="container align-self-center">
+      <div class="row ">
+        <div class="col-md-12 text-center">
+          <!-- CAROUSEL -->
+          <div id="main-carousel" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+
+                <h1>Music for everyone</h1>
+                  <a href="#" class="btn btn-custom btn-roxo btn-lg">Enjoy Free Spotify</a>
+                  <a href="#" class="btn btn-custom btn-branco btn-lg">Get Spotify Premium</a>
+
+              </div>
+
+              <div class="carousel-item">
+                <h1>The best radios</h1>
+                <a href="#" class="btn btn-lg btn-branco">
+                 <i class="fa-solid fa-music"></i> Listen Now</a>
+              </div>
+
+            </div>
+            <!-- CAROUSEL CONTROLS -->
+            <a href="#main-carousel" class="carousel-control-prev" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+
+            <a href="#main-carousel" class="carousel-control-next" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+          <!-- END CAROUSEL -->
+        
+        </div>
+      </div>
+    </div>
+   </section>
+
+
+  <!-- -------------------------- END HOME SECTION ----------------------------------- -->
+
+
+  <!-- -------------------------- SERVICES SECTION ----------------------------------- -->
+   <section id="services">
+    <div class="container">
+      <div class="row">
+        <!-- after the division of services section into one grid with 2 parts (images and text) we set another grid inside the 6 columns that we have for the images, in that way we can use the images one beside another -->
+        <div class="col-md-6">
+          <div class="row albuns">
+            <div class="col-md-6 col-6">
+              <!-- if you want to get rid of the images in certain pixels you can use the d-none d-md-block -->
+              <img src="imagens/img1.jpg" class="img-fluid">
+            </div>
+  
+            <div class="col-md-6 col-6">
+              <img src="imagens/img2.jpg" class="img-fluid">
+            </div>
+
+          </div>
+
+          <div class="row albuns">
+            <div class="col-md-6 col-6">
+              <img src="imagens/img3.jpg" class="img-fluid">
+            </div>
+  
+            <div class="col-md-6 col-6">
+              <img src="imagens/img4.jpg" class="img-fluid">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <h2>What does the Spotify have? </h2>
+
+          <h3>Music</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quia consequuntur aspernatur quam placeat recusandae maiores rem sunt, non tempore.</p>
+
+          <h3>Playlists</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis debitis dolorum accusamus in dolore cum incidunt fuga aliquam recusandae eveniet.</p>
+
+          <h3>New Releases</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis blanditiis cupiditate ducimus? Quod ratione saepe libero at, esse animi iste?</p>
+        </div>
+      </div>
+    </div>
+   </section>
+
+
+  <!-- -------------------------- END SERVICES SECTION ----------------------------------- -->
+
+  <!-- -------------------------- FEATURES SECTION ----------------------------------- -->
+  <section id="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Easy to</h2>
+          <h3>Search</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, ab?</p>
+
+          <h3>Browse</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore iste cumque harum quis in nisi, architecto sit deserunt?
+          </p>
+
+          <h3>Discover</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit tenetur commodi sunt inventore eius ipsam exercitationem dignissimos nulla?</p>
+
+        </div>
+
+        <div class="col-md-8">
+          <div class="row rotate">
+            <div class="col-md-6">
+              <img src="imagens/iphone1.png" class="img-fluid">
+            </div>
+
+            <div class="col-md-6 d-none d-md-block">
+              <img src="imagens/iphone2.png" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- -------------------------- END FEATURES SECTION ----------------------------------- -->
+
+  <!-- -------------------------- FOOTER SECTION ----------------------------------- -->
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <img class="d-none d-lg-block pr-5" src="imagens/spotify.svg" width="142">
+        </div>
+
+        <div class="col-md-2 col-4 col-sm-3">
+          <h4>company</h4>
+          <ul class="navbar-nav">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-4 col-sm-3">
+          <h4>Community</h4>
+          <ul class="navbar-nav">
+            <li><a href="#">Artists</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Brands</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-4 col-sm-3">
+          <h4>Useful links</h4>
+          <ul class="navbar-nav">
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Gifts</a></li>
+            <li><a href="#">Web Player</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 d-sm-block d-none midia col-sm-1 d-sm-flex ">
+          <ul>
+            <li>
+              <a href=""><img src="imagens/facebook.png"></a>
+            </li>
+
+            <li>
+              <a href=""><img src="imagens/instagram.png"></a>
+            </li>
+
+            <li>
+              <a href=""><img src="imagens/twitter.png"></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!-- -------------------------- END FOOTER SECTION ----------------------------------- -->
+
+
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
