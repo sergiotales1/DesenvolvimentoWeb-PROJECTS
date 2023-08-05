@@ -18,11 +18,13 @@
   </head>
   <body>
     <header> <!-- HEADER -->
+      <div style="width: 100%; height: 90px; background-color: #ffc107;">
 
+      </div>
       <!-- NAVBAR  -->
-      <nav class="navbar navbar-expand-sm bg-warning navbar-light ">
+      <nav class="navbar navbar-expand-sm bg-warning navbar-light fixed-top">
         <div class="container">
-          <a class="navbar-brand" href=""><img src="img/logo.png" width="142" alt=""></a>
+          <a class="navbar-brand" href="#"><img src="img/logo.png" width="142" alt=""></a>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
           <span class="navbar-toggler-icon"></span>
@@ -31,19 +33,19 @@
           <div class="collapse navbar-collapse" id="navbar1">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a href="" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Home</a>
               </li>
 
               <li class="nav-item">
-                <a href="" class="nav-link">Recursos</a>
+                <a href="#saiba" class="nav-link">Saiba</a>
               </li>
 
               <li class="nav-item">
-                <a href="" class="nav-link">Benefícios</a>
+                <a href="#economize" class="nav-link">Economize</a>
               </li>
 
               <li class="nav-item">
-                <a href="" class="nav-link mr-4">Preços</a>
+                <a href="#facil" class="nav-link mr-4">About</a>
               </li>
             </ul>
             <button class="btn btn-outline-light">Entrar</button>
@@ -83,7 +85,7 @@
     <!-------------------------- FIM HOME SECTION ------------------------------->
 
     <!-------------------------- SAIBA SECTION ------------------------------->
-    <section class="caixa">
+    <section id="saiba" class="caixa">
       <div class="container">
         <div class="row">
           <div class="col-md-6 d-flex">
@@ -109,7 +111,7 @@
 
     <!-------------------------- PARE SECTION ------------------------------->
 
-    <section class="caixa">
+    <section id="economize" class="caixa">
       <div class="container">
         <div class="row">
 
@@ -142,7 +144,7 @@
         <div class="row">
           <div class="col-md-4">
             <img src="img/facil.png" alt="" class="img-fluid">
-            <h4>Fácil de usar</h4>
+            <h4 id="facil">Fácil de usar</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, impedit aspernatur iste recusandae, eligendi esse totam incidunt laborum est nobis cum repellendus voluptas sunt nam a nisi facilis animi minima.
             </p>
