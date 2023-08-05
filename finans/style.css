@@ -9,7 +9,7 @@
 }
 
 footer p a {
-   margin: 5px 15px;
+   margin: 6px 10px
 }
 
 @media (max-width:576px) {
@@ -23,6 +23,7 @@ footer p a {
 
    footer p {
       display: flex;
+      margin: 10px 0 !important;
    }
 
    footer p a {
@@ -30,5 +31,7 @@ footer p a {
       font-size: 90%;
    }
 
-   
+   .row div:nth-child(2) {
+      display: none !important;
+   }
 }
