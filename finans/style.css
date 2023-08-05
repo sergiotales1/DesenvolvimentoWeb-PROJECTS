@@ -19,6 +19,15 @@ footer p a {
    }
    #home p {
       font-size: 100% !important;
+   } 
+
+   footer p {
+      display: flex;
+   }
+
+   footer p a {
+      margin: 0px 6px;
+      font-size: 90%;
    }
 
    
