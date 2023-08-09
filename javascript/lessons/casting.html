@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Casting</title>   
+
+   <script>
+      var variable1 = prompt('write the first number: ')
+      var variable2 = prompt('write the second number: ')
+
+      document.write(variable1 + variable2 +'<hr>')
+      // when we deal with prompt beings automatically the number (if that is what we ask for) will be transformed into string type, but we can transform the string into number with parseInt and parseFloat
+
+      variable1 = parseInt(variable1)
+      variable2 = parseInt(variable2)
+
+      document.write(variable1 + variable2 +'<hr>')
+      // after casting we no longer joint these two strings, we now just sum these two values
+
+      // we can also cast a number into string with .toString()
+
+      number1 = 10
+      number2 = 20
+
+      console.log(number1.toString())
+      console.log(number2.toString())
+
+      document.write(number1 + number2.toString())
+   </script>
+</head>
+<body>
+
+</body>
+</html>

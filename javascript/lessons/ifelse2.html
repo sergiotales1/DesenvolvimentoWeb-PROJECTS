@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>IF ELSE</title>   
+
+   <style>
+
+      h1, h2 {
+         font-size: xx-large;
+         display: block;
+         width: 250px;
+         text-align: center;
+      }
+
+      h1 {
+         background-color: green;
+         
+      }
+
+      h2 {
+         background-color: tomato;
+         
+      }
+   </style>
+
+   <script>
+
+      // and condition (all have to be true)
+      if (2 === 2 && 2 == '2' && 'a' == 'b') {
+         document.write('<h1>True<h1>')
+      } else {
+         document.write('<h2>False</h2>')
+      }
+
+      // Or condition (at least one has to be true)
+      if (2 === 2 || 2 == '2' || 'a' == 'b') {
+         document.write('<h1>True<h1>')
+      } else {
+         document.write('<h2>False</h2>')
+      }
+
+      // Not condition (reverses the condition)
+
+      if (!(true) || !(4 < 1)) {
+         document.write('<h1>True<h1>')
+      } else {
+         document.write('<h2>False</h2>')
+      }
+
+   //   The code you provided is asking the user to input the student's grade and the amount of absences. It then compares the grade to an average value of 7 and the absences to a maximum value of 15.
+
+      var grade = prompt('Write student s grade')
+      var absences = prompt('Write the student s amount of absences')
+      var average = 7
+      var max_absences = 15
+
+      if (grade >= average && absences <= max_absences) {
+         document.write('<h1>APPROVED</h1>')
+      } else {
+         document.write('<h2>DISAPPROVED</h2>')
+      }
+
+     /* i am using a ternary operator to assign a value to the variable `result` based on
+     the condition `(grade >= average && absences <= max_absences)`. */
+      var result = (grade >= average && absences <= max_absences) ? 'Approved' : "Disapproved"
+
+      document.write(result)
+
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
