@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Challenge 2</title>
+   <script>
+      // receive the params
+      var name = prompt("What is your name? ")
+      var height = prompt("What is your height? (CM)")
+      var weight = prompt('What is your weight? (KG)')
+      var classification = null
+
+      // converts into float type
+      height = parseFloat(height)
+      weight = parseFloat(weight)
+      
+      
+
+      // converting the CM height to M
+      height = height / 100
+      
+      var m = weight / (height**2)
+      
+      // testing the classification according to IMC
+      if (m < 16) {
+         classification = 'Baixo peso muito grave'
+
+      } else if (m <= 16 && m >= 16.99) {
+         classification = 'Baixo peso grave'
+
+      } else if (m >= 17 && m <= 18.49) {
+         classification = 'Baixo peso'
+
+      } else if (m >= 18.50 && m <= 24.99) {
+         classification = 'Peso normal'
+
+      } else if (m >= 25 && m <= 29.99) {
+         classification = 'Sobrepeso'
+
+      } else if (m >= 30 && m <= 34.99) {
+         classification = 'Obesidade grau I'
+
+      } else if (m >= 35 && m <= 39.99) {
+         classification = 'Obesidade grau II'
+
+      } else {
+         classification = 'Obesidade grau III'
+      }
+      
+      // output with the name, mass and IMC classification
+      alert(name + " possui índice de massa corporal igual a " + m.toFixed(2) + ' sendo classificado como: ' + classification)
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
