@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Functions</title>
+   <script> 
+
+      // void functions are the functions that don't returns anything, they just do their instructions and after that nothing is returned.
+      function calculatingAreaVoid(width, height) {
+         var area = width * height
+         document.write(area + '<br>')
+      }
+
+      calculatingAreaVoid(10,5)
+
+
+      // unlike the void function, when we are returning something we have more than just a instruction block of code being real, we can store the result of equations or things that are made into the function on another variable.
+
+      function calculatingAreaReturn(width, height) {
+         var area = width * height
+         return area
+      }
+      
+      var width = prompt('Write the width in metros of the terrain: ')
+      var height = prompt('Write the height in metros of the terrain: ')
+
+      area = calculatingAreaReturn(width, height)
+      document.write(area)
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
