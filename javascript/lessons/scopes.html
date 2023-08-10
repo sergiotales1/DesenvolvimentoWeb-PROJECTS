@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Scopes</title>
+   <script>
+      // there are 3 different types of scopes, Global scope, Block scope and Function scope.
+      var show = "Friends"
+      document.write(show + "<hr>")
+      // ^^ here we see that this global scope can be used at any place of script
+
+      // below here we can see that the global scope is available either here or out
+      if (true) {
+         var show2 = "Game of Thrones"
+         document.write(show + "<br>" + show2 + "<hr>")
+      }
+
+      function Test1() {
+         var show3 = "The Boys"
+         document.write(show + "<br>" + show2 + "<br>" + show3 + "<hr>")
+      }
+
+      Test1()
+
+      // you can ask me why show2 is being showed into function Test1 if is from another scope, that happens because the block scope elevate the variable to the parent block, see the tests below, we will explain this.
+
+      function CreateFuncScope() {
+         var onlyhere = "This only can be used in a function"
+         if (true) {
+            var onlyhereBLOCK = "This is being elevate to function not global scope!"
+            document.write(onlyhere + "<br>" + onlyhereBLOCK + "<br>")
+         }
+      }
+
+      CreateFuncScope()
+
+      // now you see the difference between function and block scope, i can't use any function variable outside the function and i can't also use any block scope variable if the parent of that scope isn't the global
+      document.write(onlyhere)
+      document.write(onlyhereBLOCK)
+
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
