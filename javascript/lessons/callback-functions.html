@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Callback - Functions</title>
+   <script>
+
+      // here i create the main function that will use some logical way to discover if we have a error or if we have success
+      function showArticle(id, callbackSuccess, callbackError) {
+         // the logical way to recover the success or error
+         if (false) {
+            // i set as params to this function callbacksuccess and callbackerror and for the anonym function "callbacksucces" i set 2 params as "title" and "description"
+            callbackSuccess("Testing JS part 1", "Lorem Ipsum Dolor Amet Teste only tests to make a fake description")
+         } else {
+            // same here, i send this string as a param to the callbackerror function
+            callbackError("Error to open the archive")
+         }
+      }
+      // here i declare the functions and their respective duty (the success if called will reproduce into document a title and a description)
+      var callbackSuccess = function(title, description) {
+         document.write("<h1>" + title + "</h1>" + "<p>" + description + "</p> <hr>")
+      }
+      // the error if called will reproduce the error message 
+      var callbackError = function(error) {
+         document.write("Error: " + error)
+      }
+
+      showArticle(1, callbackSuccess, callbackError)
+
+
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
