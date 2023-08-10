@@ -27,6 +27,19 @@
 
       area = calculatingAreaReturn(width, height)
       document.write(area)
+      
+
+      // testing some undefined params sent to a function
+      /* The code is defining a function called `testing` that takes two parameters `a` and `b`. Inside
+      the function, it checks if `b` is undefined using a ternary operator. If `b` is undefined, it
+      assigns a value of 0 to it, otherwise it keeps the original value of `b`. Then, the function
+      returns the sum of `a` and `b`. */
+      function testing(a, b) {
+          b = b === undefined ? 0 : b
+         return a + b
+      }
+
+      console.log(testing(1,5))
    </script>
 </head>
 <body>
