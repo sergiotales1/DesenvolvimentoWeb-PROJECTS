@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dates</title>
+   <script>
+      // https://www.w3schools.com/jsref/jsref_obj_date.asp
+
+      // here we address the date variable with a new instance of Date(), that will make the date of users browser be stored at date variable
+      var date = new Date()
+      /* we can get any kind of information using date
+      .getDate = > day of the month (from 1 to 31)  /  .getDay = > day of the week (from 0 to 6)
+
+      .getFullYear = > Returns the year  /  .getHours = > Returns the hour (from 0-23)
+
+      .getMilliSeconds = > Returns the milliseconds (from 0-999)  /  .getMinutes = > Returns the minutes (from 0-59)
+
+      .getMonth = > Returns the month (from 0-11)  /  .getSeconds = > Returns the seconds (from 0-59)
+
+     . getTime = > Returns the number of milliseconds since midnight Jan 1 1970, and a specified date  ..... and some more gets */
+      
+      document.write(date.getMinutes() + "<br>")
+
+      // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- SET =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+      // add and remove days 
+      document.write(date.toString() + "<hr>")
+      date.setDate(date.getDate() - 1)
+      document.write(date.toString())
+
+      document.write("<hr> <br><br><br><br><br> ")
+      // finding the difference of time into 2 different dates
+
+      // 15 / 01 / 2017
+       var date1 = new Date(2017, 0, 15)
+
+      // 23 / 02 / 2017
+       var date2 = new Date(2017, 1, 23)
+      
+       //showing the dates with the value that we put on
+       document.write(date1.toString() + "<hr>")
+       document.write(date2.toString() + "<hr>")
+
+       //converting into calculable numbers
+       document.write(date1.getTime() + "<hr>")
+       document.write(date2.getTime() + "<hr>")
+
+       var milli_difference = Math.abs(date1.getTime() - date2.getTime())
+       document.write(milli_difference)
+
+      var milliseconds_one_day = (1*24*60*60*1000)
+       document.write("<hr>One day has: " + milliseconds_one_day + " milliseconds <hr>")
+
+       // soo, the difference in days between the date1 and date2 is equal to:
+       document.write(Math.ceil(milli_difference / milliseconds_one_day) + " days between 15/1/2017 and 23/2/2017.")
+
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
