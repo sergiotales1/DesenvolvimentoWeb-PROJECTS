@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Events</title>
+   <script>
+      function action1() {
+         alert('This is the onclick event!')
+      }
+
+      function action2() {
+         alert('This is the onmouseout event!')
+      }
+
+   </script>
+</head>
+<body>
+   <!-- We can interact with the users mouse using an atribute (onclick / ondblclick / onmouseout / onmouseover / onmouseup) -->
+   <div onclick="action1()" onmouseout="action2()" style="width: 150px; height: 150px; background-color: #ccc;"></div>
+</body>
+</html>
