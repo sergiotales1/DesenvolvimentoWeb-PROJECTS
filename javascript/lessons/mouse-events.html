@@ -14,9 +14,23 @@
       }
 
    </script>
+   <style>
+      div:hover {
+         background-color: aquamarine ;
+      }
+      div:active {
+         background-color: red;
+      }
+
+      div {
+         width: 150px;
+         height: 150px;
+         background-color: #ccc;
+      }
+   </style>
 </head>
 <body>
    <!-- We can interact with the users mouse using an atribute (onclick / ondblclick / onmouseout / onmouseover / onmouseup) -->
-   <div onclick="action1()" onmouseout="action2()" style="width: 150px; height: 150px; background-color: #ccc;"></div>
+   <div onclick="action1()" onmouseout="action2()" ></div>
 </body>
 </html>
