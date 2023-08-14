@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DOM</title>
+   
+</head>
+<body>
+   <div id="ID1">
+      <p class="paragraph">Lorem, ipsum.</p>
+
+      <p class="paragraph">Lorem, ipsum.</p>
+   </div>
+
+   <div>
+      <p class="paragraph">Lorem, ipsum.</p>
+
+      <input type="text" name="text">
+
+      <input type="text" name="test">
+   </div>
+
+
+   <script>
+      // using dom api to manipulate the html id / tags / class / name
+
+      // by id is unique
+      console.log(document.getElementById('ID1'))
+
+      // gets all of one tag
+      console.log(document.getElementsByTagName('div'))
+
+      // gets according the class
+      console.log(document.getElementsByClassName('paragraph'))
+
+      // gets by the name
+      console.log(document.getElementsByName('test'))
+   </script>
+</body>
+</html>

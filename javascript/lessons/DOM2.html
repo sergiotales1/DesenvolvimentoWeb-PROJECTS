@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DOM</title>
+
+   <script>
+      function Spreadcharacter() {
+         //select the entered value
+         var character = document.getElementById('entry').value
+
+         // clear type field
+         document.getElementById('entry').value = ''
+
+         // clear empty spaces to get the true results
+         character.trim()
+
+         switch(character) {
+            case '0':
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '7':
+            case '8':
+            case '9':
+               document.getElementById('numbers').value += character
+               // adds the number into numbers input
+               break;
+            default:
+               document.getElementById('letters').value += character
+               // adds into letters input 
+         }
+
+      }
+   </script>
+</head>
+<body style="background-color: #d1d1d1;">
+   <input id="entry" type="text" onkeyup="Spreadcharacter()" placeholder="Enter a Character: ">
+
+   <hr>
+   <label for="">Letters:</label>
+   <input type="text" disabled="disabled" id="letters">
+   <label for="">Numbers:</label>
+   <input type="text" disabled="disabled" id="numbers">
+</body>
+</html>
