@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Challenge 4</title>
+   <script>
+      function Focus() {
+         document.getElementById("input1").style.backgroundColor = "yellow"
+      }
+
+      function Blur(CharacTest) {
+         if (CharacTest > 2) {
+            document.getElementById("input1").style.backgroundColor = "red"
+         } else {
+            document.getElementById("input1").style.backgroundColor = "green"
+         }
+      }
+
+      function ContCharac() {
+         var charac = document.getElementById("input1").value
+         return charac.length
+         
+      }
+   </script>
+</head>
+<body>
+   <input id="input1" type="text" onkeyup="ContCharac()" onfocus="Focus()" onblur="Blur(ContCharac())">
+   <input type="text" name="" id="">
+</body>
+</html>
