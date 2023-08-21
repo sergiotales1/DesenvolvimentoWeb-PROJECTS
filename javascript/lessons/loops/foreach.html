@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>LOOPS FOR EACH</title>
+   <script>
+      var employees = ['Rosa', 'Elena', 'Fernanda', 'Bob', 'Lucas']
+      
+      // foreach receive the callback function with 3 values (value, index or key and array)
+      employees.forEach(function(value, index, array){
+         console.log('Index: ' + index + ' | Value: ' + value)
+
+         //if you want to replace some value into the array
+         if (value == 'Elena') {
+            employees[index] = 'A new value'
+         }
+      })
+
+      console.log(employees)
+
+
+      var array1 = ['test1', 'test2', 'test3', 'test4', 'test5']
+      // you don't need to send the 3 values(value, index, array) if you aren't going to use some of them, for example below we only use the value(x) and index(y) 
+      array1.forEach(function(x, y) {
+         console.log(x, y)
+      })
+   </script>
+</head>
+<body>
+   
+</body>
+</html>

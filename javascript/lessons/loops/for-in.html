@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>LOOP FOR IN</title>
+   <script>
+      var guests_list = ['Sergio', 'Jamilton', 'Ana', 'Maria', 'José']
+
+      for (var x in guests_list) {
+         console.log('index: ' + x + ' value: ' + guests_list[x])
+      }
+
+      // this is the most useful tool of for in loops, they can tell you the name of each key, opposite the others loops.
+      
+      var fruits = Array()
+      fruits['zebra'] = 'Banana'
+      fruits[10] = 'Apple'
+      fruits[true] = 'Orange'
+      fruits[2] = 'Kiwi'
+      fruits['test'] = 'Mango'
+
+      for (var x in fruits){ 
+         console.log('index: ' + x + ' value: ' + fruits[x])
+      }
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
