@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Array</title>
+   <script>
+      // you can create arrays inside arrays to ease once you need to find things
+      var things_list = Array()
+      things_list['fruits'] = Array('Grape','Banana','Pear')
+
+      things_list['people'] = Array()
+      things_list['people']['a'] = 'Bob'
+      things_list['people']['b'] = 'Paul'
+      things_list['people']['c'] = 'Alex'
+
+      console.log('I know that ' + (things_list['people']['a'] + " loves to eat " + (things_list['fruits'][1])))
+
+      console.log(things_list['fruits'][0])
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
