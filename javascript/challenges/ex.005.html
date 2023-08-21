@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Challenge 5</title>
+   <style>
+      button {
+         width: 8em;
+         height: 3em;
+      }
+
+      input {
+         width: 18em;
+         height: 3em;
+         text-align: center;
+      }
+
+   </style>
+   <script>
+      var objects = Array('Chair', 'Printer', 'Fork')
+
+      function Add() {
+         if (document.getElementById('input1').value === "") {
+            alert('Enter an valid value!')
+         } else {
+            var enter = document.getElementById('input1').value
+            
+            if (objects.indexOf(enter) >= 0) {
+               alert('The object has already been added')
+            } else {
+               var enter = document.getElementById('input1').value
+               objects.push(enter)
+               console.log(objects)
+               document.getElementById('input1').value = ""
+            }
+         }
+      }
+
+      function Sorter() {
+         console.log(objects.sort())
+      }
+   </script>
+</head>
+<body style="display: flex; align-items: center; justify-content: center; height: 100vh;">
+      <div>
+         <input type="text" id="input1">
+         <button onclick="Add()" type="button">Add</button>
+         <button onclick="Sorter()" type="button">Sort</button>   
+      </div>   
+   
+</body>
+</html>

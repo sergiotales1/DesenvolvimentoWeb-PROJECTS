@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sorting Arrays</title>
+   <script>
+      var strings_array = Array()
+      strings_array[0] = 'Banana'
+      strings_array[1] = 'Apple'
+      strings_array[2] = 'Mango'
+      strings_array[3] = 'Kiwi'
+
+      console.log(strings_array.sort())
+
+      // this will sort the elements alphabetically
+      // but when we are trying to sort numerical elements we need the support of another function
+
+      var numbers_array = Array()
+      numbers_array[0] = 12
+      numbers_array[1] = 45
+      numbers_array[2] = 33
+      numbers_array[3] = 199
+      numbers_array[4] = 2
+      numbers_array[5] = 3
+      numbers_array[6] = 6
+
+      console.log(numbers_array.sort(function(a,b){return a - b}))
+
+      // this is the same as 
+
+      console.log(numbers_array.sort(NumSorter))
+      function NumSorter(num1, num2) {
+         return num1 - num2
+      } 
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
