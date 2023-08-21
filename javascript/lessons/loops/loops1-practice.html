@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Loops</title>
+   <script>
+      var array_fruits = Array()
+      array_fruits[0] = 'Mango'
+      array_fruits[1] = 'Kiwi'
+      array_fruits[2] = 'Apple'
+      array_fruits[3] = 'Strawberry'
+      
+      var y = 0
+      while(y < array_fruits.length) {
+         document.write(array_fruits[y] + '<br>')
+         y++
+      }
+
+      document.write('<br>')
+
+      var x = 0
+      do {
+         document.write(array_fruits[x] + '<br>')
+         x ++
+      } while(x < array_fruits.length)
+
+      document.write('<br>')
+
+
+      // variable // condition // gap
+      for(var z = 0; z < array_fruits.length; z++) {
+         document.write(array_fruits[z] + '<br>')
+      }
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
