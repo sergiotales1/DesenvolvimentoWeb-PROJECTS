@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Error Handling</title>
+   <script>
+      var video = Array()
+
+      video[1] = Array()
+      video[1]['name'] = 'Full Metal Alchemist'
+      video[1]['category'] = 'Anime'
+
+      function getVideo(video) {
+         try {
+            console.log(video[1])
+         } catch(erro){
+            console.log('here we treat the error')
+         } finally {
+            console.log('always pass here')
+         }
+      } 
+
+      console.log(getVideo())
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
