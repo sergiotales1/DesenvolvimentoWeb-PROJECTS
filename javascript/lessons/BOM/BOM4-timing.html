@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>BOM</title>
+   <script>
+
+      // setTimeout just creates a delay while setInterval repeats the procedure, like if you set a timeout of 2s so its a delay of 2s to realize only one time the action, opposite the setInterval that if you set 2s as a delay the action will wait 2s to make the action and after that each every 2s it will be repeated 
+      setTimeout(function(){ document.write('test')}, 2000)
+
+      var i = 100
+     var x = setInterval(function() {document.write(i+ '<br>') ; i--; if(i === 0) {clearInterval}}, 100)
+   </script>
+</head>
+<body>
+   
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>BOM</title>
+   <script>
+      var window1 
+      function OpenPopUp() { 
+      
+         window1 = window.open('', 'new_window', 'width=200', 'height=100')
+      }
+
+      function ClosePopUp() {
+         window1.close()
+      }
+   </script>
+</head>
+<body>
+   <button onclick="OpenPopUp()">Open window</button>
+   <button onclick="ClosePopUp()">Close Window</button>
+   <button onclick="window.print()">Print Window</button>
+</body>
+</html>
