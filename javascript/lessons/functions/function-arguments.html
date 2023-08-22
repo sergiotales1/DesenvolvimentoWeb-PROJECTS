@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>function</title>
+   <script>
+      function Sum1() {
+         //args will take any length of arguments that you send, you will not need to state a exactly amount of arguments
+         var result = 0
+         for (var i in arguments) {
+            result += arguments[i]
+         }
+         return result
+      }
+
+      console.log(Sum1(7, 5, 3.2))
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
