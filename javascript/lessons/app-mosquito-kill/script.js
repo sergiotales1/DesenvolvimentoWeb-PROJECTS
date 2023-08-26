@@ -55,8 +55,8 @@ setTotalGameScreen()
 function randomPosition() {
    // generating the positionX and positionY randomly (where the mosquito will appear) 
    // now we are generating numbers from 0 to 1 but multiplying them for the totalWidth and totalHeight value, limiting to numbers that floats by 0 and 100% totalWidth / Height
-   var positionX = Math.floor(Math.random() * totalWidth) - 90
-   var positionY = Math.floor(Math.random() * totalHeight) - 90 // -90 avoids the mosquito to receive the max width or height allowed
+   var positionX = Math.floor(Math.random() * totalWidth) - 120
+   var positionY = Math.floor(Math.random() * totalHeight) - 120 // -90 avoids the mosquito to receive the max width or height allowed
    
    
    // we use a ternary operator to check, if the position is less than zero (that can occur because of the -90 that we set to avoid mosquitos bad placed) them the position is going to be 0, if its more than zero the position is going to be its original number
