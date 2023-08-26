@@ -9,10 +9,22 @@
 </head>
 <body onresize="setTotalGameScreen()">
 
+   <div class="dashboard">
+      <div class="lifePoints">
+         <img id="v1" src="image/coracao_cheio.png" alt="">
+         <img id="v2" src="image/coracao_cheio.png" alt="">
+         <img id="v3" src="image/coracao_cheio.png" alt="">
+      </div>
+
+      <div class="timer">Remain time: <span id="time"></span></div>
+   </div>
+
    <script>
-      setInterval(function() {
+      document.getElementById('time').innerHTML = time
+
+      var createMosquitos = setInterval(function() {
          randomPosition()
-      }, 1000)
+      }, mosquitoRespawnTime)
       
    </script>
 </body>
