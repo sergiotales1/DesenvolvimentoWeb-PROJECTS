@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Var - Let</title>
+   <script>
+      // 3 scopes: global, function and block
+      // var outside a function have global scope, inside a block outside a function also elevates do global scope
+      // let inside block or functions only have local scope
+      // var inside function = local scope
+
+      function local() {
+         var show = 'The Walking Dead'
+         console.log(show)
+         
+         if(true) {
+            console.log(show)
+         }
+      }
+
+      local()
+
+      // if (true) {
+      //    console.log(show)
+      // }
+      
+      // here we see that outside the block "show" var have a undefined value
+
+      function local1() {
+         console.log(game)
+
+         if(true) {
+            console.log(game)
+         }
+      }
+
+      if(true) {
+         var game = 'Call of Duty'
+         console.log(game)
+      }
+
+      local1()
+
+      // here a global scope variable created inside a block
+
+      if(true) {
+         let movie = "Star Wars"
+         console.log(movie)
+      }
+
+      function local2() {
+         console.log(movie)
+      }
+
+      // local2() even if we are creating a variable inside a block (which would elevates the variable scope) with let the variable is limited only in its block / function
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
