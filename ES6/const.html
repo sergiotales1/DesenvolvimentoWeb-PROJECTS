@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>const</title>
+   <script>
+      // const variables are the constant ones, they will not be changed through the script, they are read-only variables
+       
+      const SERIE = 'The Walking Dead'
+
+      function scopes() {
+         const SERIE = 'Friends'
+         console.log('function scope: '+ SERIE)
+      }
+
+      scopes()
+
+      console.log('global scope: ' + SERIE)
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
