@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Param - Default</title>
+   <script>
+      function story(dog_name = 'Fubá', action = 'to run through the forest', owner = "Bob") {
+         document.write(`There was a dog called ${dog_name} that liked ${action} and his owner was ${owner}.`)
+      }
+
+      story('Nemo', "to play with strangers", undefined)
+
+      // we can save default params using = into the construction of the function, if none value has been passed through the call of function the default param will be printed.
+   </script>
+</head>
+<body>
+   
+</body>
+</html>

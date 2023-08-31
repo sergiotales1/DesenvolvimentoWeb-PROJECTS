@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Abstraction</title>
+   <script>
+      // object model
+      class BankAccount {
+         // agency
+         // accountNumber
+         // balance
+         // limit
+         constructor() {
+            this.agency = 1075
+            this.accountNumber = 8351125
+            this.balance = 50
+            this.limit = 450
+         }
+
+         deposit(depositValue) {
+            this.balance += depositValue 
+         }
+
+         withDraw(withDrawValue) {
+            this.balance -= withDrawValue
+         }
+
+         checkBalance() {
+            return this.balance
+         }
+      }
+
+      let x = new BankAccount()
+      let y = new BankAccount()
+
+      console.log(x.checkBalance())
+      x.deposit(450)
+      console.log(x.checkBalance())
+      x.withDraw(200)
+      console.log(x.checkBalance())
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
