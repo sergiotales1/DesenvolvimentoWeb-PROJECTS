@@ -50,7 +50,13 @@
             console.log('Speaking!')
          }
       }
+      // we create a new instance and instantly send the values of this new instance, which are in case of parrot the beak, knowSpeak, color, size and weight.
 
+      // this values sent once we create a instance are received in each respective this., for example, the first associated attribute is "knowSpeak" which is associated into Parrot class
+
+      // then we associate the second attribute which is beak, associated into the parent class "bird" (we send the value to bird class which the super function)
+
+      // after a long journey with our non-associated attributes they finally arrive Animal with their last destination. Using the super function on Bird class we send super(color, size, weight) to the Animal construct which effect the work of associate these values using this.color, this.size and this.weight
       let parrot = new Parrot('Medium', true, 'Blue', 30, 500)
       let parrot2 = new Parrot('Big', false, 'Pink', 40, 200)
       let bird = new Bird('Short', 'Red', 25, 100)

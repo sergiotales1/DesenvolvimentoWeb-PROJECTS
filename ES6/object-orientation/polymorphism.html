@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script>
+      class Animal {
+         constructor(color, size, weight){
+            this.color = color
+            this.size = size
+            this.weight = weight
+         }
+
+         sleep() {
+            console.log('Sleeping!')
+         }
+      }
+
+      class Dog extends Animal{
+         constructor(ears, color, size, weight){
+            super(color, size, weight)
+            this.ears = ears
+         }
+
+         run(){
+            console.log('Running!')
+         }
+
+      }
+
+      class Bird extends Animal{
+         constructor(beak, color, size, weight){
+            super(color, size, weight)
+            this.beak = beak
+         }
+
+         fly() {
+            console.log('Flying!')
+         }
+      }
+
+      class Parrot extends Bird{
+         constructor(beak, knowSpeak, color, size, weight){
+            super(beak, color, size, weight)
+            this.knowSpeak = knowSpeak
+         }
+
+         speak() {
+            console.log('Speaking!')
+         }
+      }
+
+      class Ostrich extends Bird {
+         constructor(){
+            super('Big', 'White and black', 250, 15000)
+         }
+
+         sinkHead(){
+            console.log('Sink head!')
+         }
+         // on the real world ostrich is a animal that can't fly, so we are changing a extended from bird method to the reality (can't fly)
+         fly(){
+            console.log('Can\'t fly!')
+         }
+      }
+
+      let ostrich = new Ostrich()
+      ostrich.fly()
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
