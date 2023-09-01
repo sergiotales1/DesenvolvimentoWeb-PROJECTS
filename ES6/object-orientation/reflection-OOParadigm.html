@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Object Oriented</title>
+   <script>
+      // OO Paradigm
+      class Chair {
+         constructor(qtd_legs, spin, color){
+            this.qtd_legs = qtd_legs
+            this.spin = spin
+            this.color = color
+         }
+
+         spinChair() {
+            if(this.spin === true) {
+               console.log('Spinning!!!')
+            } else {
+               console.log('This Chair Cannot Spin.')
+            }
+         }
+      }
+
+      
+      let chairs = Array()
+      chairs.push(new Chair(4, false, 'blue'))
+      chairs.push(new Chair(3, true, 'red'))
+
+      console.log(chairs)
+      chairs[1].spinChair()
+   </script>
+</head>
+<body>
+   
+</body>
+</html>

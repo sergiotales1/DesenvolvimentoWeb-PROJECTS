@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Encapsulation</title>
+   <script>
+      class Tv {
+         constructor() {
+            this._channelsGrade = Array(2, 4, 5, 7, 10)
+            this._activeChannel = 5
+            this._volume = 5
+         }
+
+         // getters setters
+         // the script search for a set first and if theres not a set into the code the script will only use the get method showing the atribute
+         get activeChannel() {
+            return this._activeChannel
+         }
+
+         set activeChannel(channel) {
+            if(this._channelsGrade.indexOf(channel) !== -1){
+               this._activeChannel = channel
+            }
+         }
+      }
+
+      let tv = new Tv
+
+      tv.activeChannel = 3
+      console.log(tv.activeChannel)
+   </script>
+</head>
+<body>
+   
+</body>
+</html>

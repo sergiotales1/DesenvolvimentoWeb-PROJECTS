@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Reflection</title>
+   <script>
+      // chair and couch software
+      // procedure paradigm
+      
+      //chair 
+      let qtd_legs = 4
+      let spin = false
+      let color = 'blue'
+
+      // chair array
+      let chairs = Array()
+      
+      chairs[0] = Array()
+      chairs[0]['qtd_legs'] = 4
+      chairs[0]['spin'] = false
+      chairs[0]['color'] = 'blue'
+
+      chairs[1] = Array()
+      chairs[1]['qtd_legs'] = 1
+      chairs[1]['spin'] = true
+      chairs[1]['color'] = 'red'
+
+      function spinChair(index){
+         if(chairs[index]['spin'] === true) {
+            console.log('Spinning')
+         } else {
+            console.log('Chair cannot spin')
+         }
+      }
+
+      function add_chair(qtd_legs, spin, color){
+         let chair = Array()
+
+         chair['qtd_legs'] = qtd_legs
+         chair['spin'] = spin
+         chair['color'] = color
+         
+         chairs.push(chair)
+      }
+
+      add_chair(3, false, 'green')
+      console.log(chairs)
+      spinChair(0)
+      
+      // basically this entire code only has been created to illustrate the needy for a clean and more safe way to work with different types of entities of the same object 
+   </script>
+</head>
+<body>
+
+</body>
+</html>

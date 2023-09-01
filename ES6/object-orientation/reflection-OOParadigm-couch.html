@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Couch</title>
+   <script>
+      // couch with color / reclining / seater
+      class Couch{
+         constructor(color, reclining, seater){
+            this.color = color
+            this.reclining = reclining
+            this.seater = seater
+         }
+
+         checkReclining(){
+            if(this.reclining === true) {
+               console.log('This couch can recline!')
+            } else {
+               console.log('This coach is unable to recline.')
+            }
+         }
+      }
+
+      let couch = new Couch('blue', false, '3')
+      let couch2 = new Couch('red', true, '2')
+      couch2.checkReclining()
+
+   </script>
+</head>
+<body>
+   
+</body>
+</html>

@@ -11,13 +11,13 @@
          // accountNumber
          // balance
          // limit
-         constructor() {
+         constructor() { // here we declare the attributes of our object
             this.agency = 1075
             this.accountNumber = 8351125
             this.balance = 50
             this.limit = 450
          }
-
+         // below here are all the method, the actions that our object will do
          deposit(depositValue) {
             this.balance += depositValue 
          }
@@ -32,8 +32,7 @@
       }
 
       let x = new BankAccount()
-      let y = new BankAccount()
-
+      // and here we are manipulating the objects using its methods
       console.log(x.checkBalance())
       x.deposit(450)
       console.log(x.checkBalance())

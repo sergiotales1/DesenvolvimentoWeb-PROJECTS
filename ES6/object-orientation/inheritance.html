@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Inheritance</title>
+   <script>
+      class Animal {
+         constructor(){
+            this.color = ""
+            this.size = null
+            this.weight = null
+         }
+
+         sleep() {
+            console.log('Sleeping!')
+         }
+      }
+
+      class Dog extends Animal{
+         constructor(color, size, ears){
+            super()
+            this.ears = "Big and Drooping"
+         }
+
+         run(){
+            console.log('Running!')
+         }
+
+         growl(){
+            console.log('Growling')
+         }
+      }
+
+      class Bird extends Animal{
+         constructor(color, size, beak){
+            super()
+            this.beak = "Short"
+         }
+
+         fly() {
+            console.log('Flying!')
+         }
+      }
+
+      class Parrot extends Bird{
+         constructor(){
+            super()
+            this.knowSpeak = true
+         }
+
+         speak() {
+            console.log('Speaking!')
+         }
+      }
+
+      let dog = new Dog()
+      let bird = new Bird()
+      let parrot = new Parrot()
+
+      parrot.speak()
+      parrot.sleep()
+      parrot.fly()
+
+      console.log(dog.weight)
+      console.log(bird.weight)
+      console.log(parrot.weight)
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
