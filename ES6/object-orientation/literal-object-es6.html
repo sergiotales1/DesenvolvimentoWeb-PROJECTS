@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Literal Object</title>
+   <script>
+      let userName = "Sergio"
+      let userAge = 25
+      let userGender = "Male"
+      let userJob = "Developer"
+      
+      // we can make the code lean if we just send the name of the variable itself disregarding its key name 
+      let object = {
+         userName,
+         userAge,
+         userGender,
+         userJob,
+         showSummary(){
+            console.log(`${this.userName}, ${this.userAge} years, ${this.userGender} and ${this.userJob}`)
+         }
+      }
+
+      object.showSummary()
+
+      // if you want to change literal objects you can do like this
+      object.userAge = 20
+      object.userName = "Bro"
+      console.log(object.userAge)
+      console.log(object.userName)
+
+      // if you want to add a new pair of key : value you can do following this way:
+
+      let person1 = {
+         name : "Sergio",
+         age : 25
+      }
+      console.log(person1)
+      
+      person1.gender = "Male"
+      
+      console.log(person1)
+
+      person1.sayHi = () => console.log("Hello World!")
+      person1.sayHi()
+   </script>
+
+</head>
+<body>
+   
+</body>
+</html>

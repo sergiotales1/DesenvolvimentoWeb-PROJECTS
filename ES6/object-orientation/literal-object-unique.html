@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Literal Object</title>
+   <script>
+      let subscription = {
+         clientId : 1000,
+         description : "Internet access",
+         status() {
+            console.log("Active")
+         }
+      }
+
+      console.log(subscription.description)
+
+      let y = subscription
+      console.log(y.description)
+
+      y.description = "internet + tv + phone"
+
+      console.log(subscription.description)
+      console.log(y.description)
+   </script>
+
+</head>
+<body>
+   
+</body>
+</html>

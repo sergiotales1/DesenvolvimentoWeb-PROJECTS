@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Literal Object</title>
+   <script>
+      class Product {
+         constructor(description, price){
+            this.description = description
+            this.price = price
+         }
+
+         showProduct() {
+            console.log(`${this.description} for only $${this.price}`)
+         }
+      }
+
+      let product1 = new Product("Notebook", 2000)
+      product1.showProduct()
+
+      // key : value 
+      let literalProduct = {
+         description : "Fridge",
+         price : 1800,
+         showProduct : function(){
+            console.log(`${this.description} for only $${this.price}`)
+         }
+      }
+
+      literalProduct.showProduct()
+   </script>
+
+</head>
+<body>
+   
+</body>
+</html>
