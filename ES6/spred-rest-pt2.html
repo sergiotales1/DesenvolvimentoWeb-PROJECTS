@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Spread - Rest</title>
+   <script>
+      // contexto rest
+
+      function sum(...param){
+         let result = 0
+
+         console.log(param)
+         
+         param.forEach(v => result += v)
+         return result
+      }
+
+      console.log(sum(3, 8, 5, 7, -8, 10, 115))
+
+      function multiplicacao(m, ...p){
+         console.log(m)
+         let result = 0
+         console.log(p)
+
+         p.forEach(element => result += m * element) // pick the first sent element and multiply for each value into the "p" array
+                  // (result = result + (m * v))
+         return result
+      }
+      
+      console.log(multiplicacao(5, 7, 12, 3, 49))
+
+   </script>
+</head>
+<body>
+   
+</body>
+</html>

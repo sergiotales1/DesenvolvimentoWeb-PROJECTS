@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Spread - Rest</title>
+   <script>
+      let randomSentence = "This is how to use spread / rest"
+
+      // string
+      console.log(randomSentence)
+      console.log(...randomSentence)
+      console.log([...randomSentence])
+
+      // array 
+      let coursesArray1 = ['NodeJsS e MongoDB', 'ES6', "TypeScript e Angular 4"]
+      let coursesArray2 = ['Multiplataforma Android/IOS', "Introdução ao GNU/Linux"]
+      let arrayCoursesFull = ['Web Completo', 'Android Completo', ...coursesArray1, ...coursesArray2]
+
+      console.log(arrayCoursesFull)
+
+      // objects
+      let pessoa = {nome: 'João', idade : 27}
+      let clone = {endereço : 'Rua Abc', ...pessoa}
+      console.log(clone)
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
