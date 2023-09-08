@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Prototype</title>
+   <script>
+      Object.prototype.attr50 = "Z" // every object that don't have a __proto__ to inherit of will receive this attribute. BE CAREFUL.
+
+      let animal = {attr1 : "a" }
+      let vertebrate = {__proto__: animal, attr2 : "b"}
+      let bird = {__proto__: vertebrate, attr3 : "c"}
+
+      console.log(bird.attr50)
+   </script>
+
+</head>
+<body>
+   
+</body>
+</html>

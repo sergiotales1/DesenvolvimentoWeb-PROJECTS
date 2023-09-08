@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Creating objects</title>
+   <script>
+      let Car = function(){
+         this.color = "Yellow"
+         this.model = "Chevette"
+         this.currentSpeed = 0
+         this.maxSpeed = 180
+
+         this.speedUp = function(){
+            // this.currentSpeed += 10
+
+            let speed = this.getCurrentSpeed() + 10
+            this.setCurrentSpeed(speed)
+         }
+
+         this.getCurrentSpeed = function(){
+            return this.currentSpeed
+         }
+
+         this.setCurrentSpeed = function(speed){
+            this.currentSpeed = speed
+         }
+      }
+
+      let car = new Car()
+
+      console.log(`The current speed is: ${car.getCurrentSpeed()}`)
+      car.speedUp()
+      car.speedUp()
+      car.speedUp()
+      console.log(`The current speed is: ${car.getCurrentSpeed()}`)
+   </script>
+
+</head>
+<body>
+   
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Creating objects</title>
+   <script>
+      let Car = function(){
+         this.color = "Yellow"
+         this.model = "Chevette"
+         this.currentSpeed = 0
+         this.maxSpeed = 180
+
+         this.speedUp = function(){
+            // this.currentSpeed += 10
+
+            let speed = this.getCurrentSpeed() + 50
+            if(speed > this.maxSpeed){
+               speed = this.maxSpeed
+            }
+            this.setCurrentSpeed(speed)
+         }
+
+         this.getCurrentSpeed = function(){
+            return this.currentSpeed
+         }
+
+         this.setCurrentSpeed = function(speed){
+            this.currentSpeed = speed
+         }
+      }
+
+      let car = new Car()
+      console.log(car.getCurrentSpeed())
+      car.speedUp()
+      console.log(car.getCurrentSpeed())
+      car.speedUp()
+      console.log(car.getCurrentSpeed())
+      car.speedUp()
+      console.log(car.getCurrentSpeed())
+      car.speedUp()
+      console.log(car.getCurrentSpeed())
+      car.maxSpeed = 280
+      car.speedUp()
+      console.log(car.getCurrentSpeed())
+
+
+
+      
+      let Car2 = function(){
+
+         var maxSpeed = 180
+         var totalKM = 0
+         this.color = "Yellow"
+         this.model = "Chevette"
+         this.currentSpeed = 0
+         
+
+         this.speedUp = function(){
+            // this.currentSpeed += 10
+
+            let speed = this.getCurrentSpeed() + 50
+            if(speed > maxSpeed){
+               speed = maxSpeed
+            }
+            this.setCurrentSpeed(speed)
+           
+            setTotalKm(0.07)
+            console.log(totalKM)
+         }
+
+         this.getCurrentSpeed = function(){
+            return this.currentSpeed
+         }
+
+         this.setCurrentSpeed = function(speed){
+            this.currentSpeed = speed
+         }
+
+         var setTotalKm = function(q){
+            totalKM += q
+         }
+      }
+
+      let car2 = new Car2()
+      console.log(car2.getCurrentSpeed())
+      car2.speedUp()
+      console.log(car2.getCurrentSpeed())
+      car2.speedUp()
+      console.log(car2.getCurrentSpeed())
+      car2.speedUp()
+      console.log(car2.getCurrentSpeed())
+      car2.speedUp()
+      console.log(car.getCurrentSpeed())
+      // car2.maxSpeed = 280
+      car2.speedUp()
+      console.log(car2.getCurrentSpeed())
+
+
+   </script>
+
+</head>
+<body>
+   
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Factory Function</title>
+   <script>
+      let Bike1 = {
+         color : 'White',
+         gear : 'Unique',
+         aro : 12,
+         pedal(){
+            console.log('To pedal method executed!')
+         }
+      } 
+
+      let Bike2 = {
+         color : 'Red',
+         gear : '18',
+         aro : 26,
+         pedal(){
+            console.log('To pedal method executed!')
+         }
+      } 
+
+      console.log(Bike1)
+      console.log(Bike2)
+
+
+
+      let bikeFactory = function(color, gear, aro ){
+         return{
+            color,
+            gear,
+            aro,
+            pedal(){
+            console.log('To pedal method executed!')
+            }
+         }
+         // to lean the code
+         // return{
+         //    color : color,
+         //    gear : gear,
+         //    aro : aro,
+         //    pedal(){
+         //    console.log('To pedal method executed!')
+         //    }
+         // }
+          
+      }
+
+      let bike3 = bikeFactory("Green", '18', 29)
+      console.log(bike3)
+      
+      let bike4 = bikeFactory("Yellow", 'Unique', 24)
+      console.log(bike4)
+
+      console.log(bike4.color)
+      bike3.pedal()
+   </script>
+
+</head>
+<body>
+   
+</body>
+</html>

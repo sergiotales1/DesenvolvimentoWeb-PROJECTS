@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Prototype</title>
+   <script>
+      // airplane
+      // atributes color and model; method takeOff
+
+      // literal object 
+      let a1 = {
+         color : "White",
+         model : 'Airbus a380',
+         takeOff : function(){console.log("We are get in the air")}
+      }
+
+      // factory object
+      let airplaneF = function(){
+         this.color = 'Blue'
+         this.model = 'Boeing 797'
+         this.takeOff = function(){console.log("We are get in the air")}
+      }
+
+      let a2 = new airplaneF()
+
+      // class
+
+      class AirplaneC {
+         constructor(){
+            this.color = 'Red'
+            this.model = 'Embraer E-Jets'
+         }
+
+         takeOff() {
+            console.log("We are ready to get in the air")
+         }
+      }
+
+      let a3 = new AirplaneC()
+
+      console.log(a1)
+      console.log(a2)
+      console.log(a3)
+      
+   </script>
+
+</head>
+<body>
+   
+</body>
+</html>
