@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Destructuring</title>
+   <script>
+     let frutas = ['Abacaxi' , 'Uva', 'Pera', 'Mamão' ]
+
+   //   let [a, b, ,c] = frutas using this i can skip some item that i don't wanna show
+      let [a, b, c, d, e = 'Banana'] = frutas // here i can use default params in case of an empty value 
+     console.log(a, b, c, d, e)
+      
+     // 2d arrays
+     let coisas = [['Abacaxi' , 'Uva', 'Pera', 'Mamão' ], ['José', "Maria"]]
+
+     let [,[,n1]] = coisas // destructuring 2 arrays to obtain the second value of the second array
+
+     let [[, , pera]] = coisas
+      console.log(pera)
+     console.log(n1)
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
