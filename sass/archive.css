@@ -1,0 +1,32 @@
+.main-div h1 {
+  color: goldenrod;
+}
+.main-div h1:hover {
+  color: green;
+}
+.main-div .grow-btn {
+  padding: 10px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+.main-div .grow-btn:active {
+  transform: scale(200%);
+}
+.main-div .shrink-btn {
+  color: aqua;
+  background-color: orange;
+  padding: 30px;
+}
+.main-div .shrink-btn p {
+  font-size: 19px;
+}
+.main-div .shrink-btn p:hover {
+  color: white;
+}
+.main-div .shrink-btn:active {
+  transform: scale(70%);
+  color: orange;
+}
+
+/*# sourceMappingURL=archive.css.map */

@@ -1,0 +1,36 @@
+$bg: background-color;
+$orange: orange;
+.main-div {
+  h1 {
+    color: goldenrod;
+    &:hover {
+      color: green;
+    }
+  }
+
+  .grow-btn {
+    padding: 10px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    &:active {
+      transform: scale(200%);
+    }
+  }
+
+  .shrink-btn {
+    color: aqua;
+    #{$bg}: $orange;
+    padding: 30px;
+    p {
+      font-size: 19px;
+      &:hover {
+        color: white;
+      }
+    }
+    &:active {
+      transform: scale(70%);
+      color: orange;
+    }
+  }
+}

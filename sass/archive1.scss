@@ -1,0 +1,26 @@
+$colorList: orange, red, aqua;
+$total: 12;
+@function largura-coluna($coluna) {
+  @return percentage(calc($coluna/$total));
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  div {
+    display: flex;
+
+    div.col-4 {
+      margin: 3px;
+    }
+  }
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: largura-coluna($i);
+    background-color: green;
+  }
+}
